@@ -1,0 +1,263 @@
+body {
+  background-color: #FFE7FB;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.deck-title-input {
+  border: 1px solid #21CDB4;
+  font-size: 17px;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  padding: 10px 15px;
+  border-radius: 60px 0 0 60px;
+  letter-spacing: 0.01em;
+  border: none;
+}
+
+.add-deck-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  background-color: #21CDB4;
+  border-radius: 0 60px 60px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.plus-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: #fff;
+}
+
+.edit-name-input {
+  border: 1px solid #21CDB4;
+  font-size: 12px;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  padding: 5px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.01em;
+  border: none;
+}
+
+.navbar {
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.navbar--home-icon {
+  width: 100px;
+  height: 2.8rem;
+  color: #21CDB4;
+  cursor: pointer;
+  position: absolute;
+}
+
+.title {
+  margin: 0 auto;
+  margin-bottom: 18px;
+  text-align: center;
+  color: #21CDB4;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.view-cards {
+  padding-top: 80px;
+}
+
+.view-cards--deck-name {
+  text-align: center;
+}
+
+.view-cards--options {
+  display: flex;
+  justify-content: center;
+}
+
+.view-cards--options p {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.view-cards .flashcard {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  font-size: 36px;
+}
+
+.flashcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: all 0.25s;
+  box-shadow: 0 3px 8px rgb(32 33 46 / 48%);
+}
+
+.flashcard.front {
+  background-color: #21CDB4;
+}
+
+.flashcard.back {
+  background-color: green;
+  transform: rotateY(-180deg);
+}
+
+.flashcard.back .flashcard--content{
+  transform: scale(-1, 1);
+}
+
+.flashcard--delete-icon,
+.deck--delete-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1.5em;
+  width: 1.5em;
+  margin: 12px;
+  transition: all 0.2s;
+}
+
+.flashcard.back .flashcard--delete-icon {
+  left: 0;
+}
+
+.deck--edit-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 1.5em;
+  margin: 12px;
+  transition: all 0.2s;
+}
+
+.flashcard--delete-icon:hover,
+.deck--delete-icon:hover,
+.deck--edit-icon:hover {
+  height: 2em;
+  width: 2em;
+}
+
+.deck-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #21CDB4;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgb(32 33 46 / 48%);
+}
+
+.add-deck {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.deck-options--deck-name {
+  text-align: center;
+}
+
+.deck-options--top-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deck-options--top-options div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+  margin: 20px;
+  background-color: #21CDB4;
+  border-radius: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+.deck-options--container {
+  margin-bottom: 30px;
+}
+
+.deck-options--container .shuffle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #21CDB4;
+  border-radius: 80px;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.add-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #21CDB4;
+  flex-direction: column;
+}
+
+.add-card input {
+  border: 1px solid #21CDB4;
+  font-size: 12px;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  padding: 10px 15px;
+  border-radius: 60px;
+  letter-spacing: 0.01em;
+  border: none;
+}
+
+.add-card--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+}
