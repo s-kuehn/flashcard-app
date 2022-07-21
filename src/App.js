@@ -2,7 +2,6 @@ import React from "react";
 import { nanoid } from "nanoid";
 import Navbar from "./components/Navbar";
 import DeckList from "./components/DeckList";
-import CardList from "./components/CardList";
 import AddDeck from "./components/AddDeck";
 import AddCard from "./components/AddCard";
 import DeckOptions from "./components/DeckOptions";
@@ -33,7 +32,7 @@ export default function App() {
 
   function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
-      while (currentIndex != 0) {
+      while (currentIndex !== 0) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
       [array[currentIndex], array[randomIndex]] = [
