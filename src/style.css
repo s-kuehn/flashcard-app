@@ -54,7 +54,7 @@ input:focus-visible {
 }
 
 .navbar {
-  height: 60px;
+  width: 94vw;
   margin-bottom: 5px;
 }
 
@@ -69,7 +69,6 @@ input:focus-visible {
 .title {
   margin: 0 auto;
   margin-bottom: 18px;
-  padding-top: 2px;
   text-align: center;
   color: #21CDB4;
 }
