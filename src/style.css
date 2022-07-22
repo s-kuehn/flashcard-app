@@ -246,6 +246,7 @@ input:focus-visible {
 }
 
 .add-card input {
+  width: 160px;
   border: 1px solid #21CDB4;
   font-size: 12px;
   font-family: 'Mochiy Pop P One', sans-serif;
