@@ -54,7 +54,7 @@ input:focus-visible {
 }
 
 .navbar--home-icon {
-  width: 100px;
+  width: 50px;
   height: 2.8rem;
   color: #21CDB4;
   cursor: pointer;
@@ -64,6 +64,7 @@ input:focus-visible {
 .title {
   margin: 0 auto;
   margin-bottom: 18px;
+  padding-top: 2px;
   text-align: center;
   color: #21CDB4;
 }
