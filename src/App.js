@@ -15,20 +15,16 @@ export default function App() {
   const [onStudyPage, setOnStudyPage] = React.useState(false);
   const [onAddCardsPage, setOnAddCardsPage] = React.useState(false);
 
-  const [decks, setDecks] = React.useState([{
-    id: nanoid(),
-    title: 'This is my first deck!',
-    cards: [{
-      id: nanoid(),
-      frontText: 'This is my first flashcard',
-      backText: 'Isn\'t this super cool!'
-    }]
-  }]);
-
+  const [decks, setDecks] = React.useState(JSON.parse(localStorage.decks) || []);
+  console.log(decks)
   const [viewDeckOptions, setViewDeckOptions] = React.useState({
     id: '',
     deckName: '',
   });
+
+  React.useEffect(() => {
+    localStorage.setItem("decks", JSON.stringify(decks));
+  }, [decks]);
 
   function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
