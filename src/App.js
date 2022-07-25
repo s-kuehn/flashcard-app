@@ -15,7 +15,7 @@ export default function App() {
   const [onStudyPage, setOnStudyPage] = React.useState(false);
   const [onAddCardsPage, setOnAddCardsPage] = React.useState(false);
 
-  const [decks, setDecks] = React.useState(JSON.parse(localStorage.decks) || []);
+  const [decks, setDecks] = React.useState(JSON.parse(localStorage.decks) ? JSON.parse(localStorage.decks) : []);
   console.log(decks)
   const [viewDeckOptions, setViewDeckOptions] = React.useState({
     id: '',
